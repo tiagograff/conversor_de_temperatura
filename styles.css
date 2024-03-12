@@ -41,6 +41,9 @@ body {
 
 /* cabeçalho */
 
+header {
+    height: 100px;
+}
 .welcome-paragraph {
     font-size: 1.25rem;
     font-weight: 600;
@@ -71,4 +74,78 @@ body {
     border: 1px solid #f9f6ec;
     background-color: #f9f6ec;
     color: #0d0c0c;
+}
+/* contém o conteúdo */
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+}
+
+/* display */
+
+#displayID {
+    min-width: 400px;
+    max-width: 500px;
+    min-height: 200px;
+    border: none;
+    background-color: var(--color-blue-standard);
+}
+
+/* conversor */
+
+.conversion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: var(--color-standard-two);
+    min-width: 400px;
+    max-width: 500px;
+    min-height: 200px;
+}
+
+.toConvert{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 20px;
+
+}
+
+.toConvert input{
+    min-width: 200px;
+    max-width: 250px;
+    min-height: 40px;
+    max-height: 50px;
+    text-align: center;
+    border-radius: 20px 0 0 20px;
+    border: none;
+}
+
+.toConvert select{
+    text-align: center;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    background-color: var(--color-blue-standard);
+    color: var(--color-darkTheme-font);
+}
+
+.scale select {
+    min-width: 220px;
+    max-width: 250px;
+    min-height: 40px;
+    max-height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color-blue-standard);
+    color: var(--color-darkTheme-font);
+}
+
+/* responsividade */
+@media screen and (max-width: 750px) {
+    .box {
+        flex-direction: column;
+    }
 }

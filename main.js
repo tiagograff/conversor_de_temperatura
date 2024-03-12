@@ -14,6 +14,8 @@ darkButton.addEventListener("click", () => {
     body.dataset.theme = "dark";
     body.style.backgroundColor = "#0d0c0c";
     body.style.color = "#f9f6ec";
+    body.style.setProperty("--color-blue-standard", "#122f51");
+    body.style.setProperty("--color-standard-two", "#1b1c26");
   }
 });
 //transformando dark para light
@@ -23,5 +25,7 @@ lightButton.addEventListener("click", () => {
     body.dataset.theme = "light";
     body.style.backgroundColor = "#f9f6ec";
     body.style.color = "#0d0c0c";
+    body.style.setProperty("--color-blue-standard", "#17a7a8");
+    body.style.setProperty("--color-standard-two", "#ebe7e0");
   }
 });

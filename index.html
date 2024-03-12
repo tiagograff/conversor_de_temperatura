@@ -23,6 +23,36 @@
           </li>
         </ul>
       </nav>
+      <!-- principal -->
+      <main>
+        <div class="box">
+          <div class="conversion">
+            <div class="toConvert">
+              <input
+                placeholder="digite a temperatura"
+                name="temperature"
+                id="temperature"
+                type="text"
+              />
+              <select name="select">
+                <option value="celsius">C</option>
+                <option value="fahrenheit" selected>F</option>
+                <option value="kelvin">K</option>
+              </select>
+            </div>
+            <div class="scale">
+              <select name="select">
+                <option value="celsius">celsius</option>
+                <option value="fahrenheit" selected>fahrenheit</option>
+                <option value="kelvin">kelvin</option>
+              </select>
+            </div>
+          </div>
+          <div class="display">
+            <input id="displayID" type="text" disabled />
+          </div>
+        </div>
+      </main>
     </header>
   </body>
 </html>
