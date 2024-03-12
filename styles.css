@@ -1,0 +1,74 @@
+/* fonte */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* variáveis */
+
+:root{
+    --main-font: 'Montserrat', sans-serif;
+    /* cores */
+    --color-blue: #122f51;
+    --color-blue-standard: #17a7a8;
+    --color-standard-one: #f9f6ec;
+    --color-standard-two: #ebe7e0;
+    --color-black-one: #0d0c0c;
+    --color-black-two: #1b1c26;
+    --color-standard-cyan: #1c8080;
+    --color-error: #e84624;
+    /* cores fonte */
+    --color-standard-font: #0d0c0c;
+    --color-darkTheme-font: #f9f6ec;
+}
+
+/* página */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: var(--main-font);
+  }
+
+/* corpo */
+
+body {
+    background-color: var(--color-standard-one);
+    color: var(--color-standard-font);
+    margin: 20px;
+}
+
+/* cabeçalho */
+
+.welcome-paragraph {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+/* menu */
+.menu {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.button{
+    margin-left: 20px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: var(--color-standard-one);
+    color: var(--color-standard-font);
+    border: 1px solid var(--color-black-one);
+}
+
+#darkButton {
+    border: 1px solid #0d0c0c;
+    background-color: #0d0c0c;
+    color: #f9f6ec;
+}
+
+#lightButton {
+    border: 1px solid #f9f6ec;
+    background-color: #f9f6ec;
+    color: #0d0c0c;
+}
