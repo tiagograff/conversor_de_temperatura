@@ -59,7 +59,7 @@ button.addEventListener("click", (event) => {
       display.value = `${parseFloat(number) + 273.15}K`;
     } else {
       display.style.backgroundColor = "#e84624";
-      display.value = "erro: Escala não encontrada";
+      display.value = "erro: escala não encontrada";
     }
   }
   //caso for fahrenheit
@@ -70,7 +70,7 @@ button.addEventListener("click", (event) => {
       display.value = `${((parseFloat(number) - 32) * 5) / 9 + 273.15}K`;
     } else {
       display.style.backgroundColor = "#e84624";
-      display.value = "erro: Escala não encontrada";
+      display.value = "erro: escala não encontrada";
     }
   }
   //caso for kelvin
@@ -81,7 +81,7 @@ button.addEventListener("click", (event) => {
       display.value = `${parseFloat(number) - 273.15}°C`;
     } else {
       display.style.backgroundColor = "#e84624";
-      display.value = "erro: Escala não encontrada";
+      display.value = "erro: escala não encontrada";
     }
   }
 });

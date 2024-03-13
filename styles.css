@@ -168,4 +168,12 @@ header {
     .box {
         flex-direction: column;
     }
+
+    .conversion {
+        min-width: 350px;
+    }
+
+    #displayID {
+        min-width: 350px;
+    }
 }
