@@ -34,19 +34,22 @@
                 id="temperature"
                 type="text"
               />
-              <select name="select">
-                <option value="celsius">C</option>
-                <option value="fahrenheit" selected>F</option>
-                <option value="kelvin">K</option>
+              <select id="selectTemperatureList" name="select">
+                <option id="temperatureC" value="C">C</option>
+                <option id="temperatureF" value="F" selected>F</option>
+                <option id="temperatureK" value="K">K</option>
               </select>
             </div>
             <div class="scale">
-              <select name="select">
-                <option value="celsius">celsius</option>
-                <option value="fahrenheit" selected>fahrenheit</option>
-                <option value="kelvin">kelvin</option>
+              <select id="selectToList" name="select2">
+                <option id="toC" value="toCelsius">celsius</option>
+                <option id="toF" value="toFahrenheit" selected>
+                  fahrenheit
+                </option>
+                <option id="toK" value="toKelvin">kelvin</option>
               </select>
             </div>
+            <button type="submit" id="transform">transformar</button>
           </div>
           <div class="display">
             <input id="displayID" type="text" disabled />

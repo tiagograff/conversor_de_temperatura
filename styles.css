@@ -143,6 +143,26 @@ header {
     color: var(--color-darkTheme-font);
 }
 
+#transform{
+    margin-top: 20px;
+    min-width: 220px;
+    max-width: 250px;
+    min-height: 40px;
+    max-height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--color-darkTheme-font);
+    color: var(--color-blue-standard);
+}
+
+#displayID{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color:#ebe7e0;
+}
+
 /* responsividade */
 @media screen and (max-width: 750px) {
     .box {
