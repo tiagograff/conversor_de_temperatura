@@ -54,9 +54,9 @@ button.addEventListener("click", (event) => {
   //caso for celsius
   if (degree === "C") {
     if (toConvertTemperature === "toFahrenheit") {
-      display.value = `${number * 1.8 + 32}°F`;
+      display.value = `${(number * 1.8 + 32).toFixed(2)}°F`;
     } else if (toConvertTemperature === "toKelvin") {
-      display.value = `${parseFloat(number) + 273.15}K`;
+      display.value = `${(parseFloat(number) + 273.15).toFixed(2)}K`;
     } else {
       display.style.backgroundColor = "#e84624";
       display.value = "erro: escala não encontrada";
@@ -65,9 +65,11 @@ button.addEventListener("click", (event) => {
   //caso for fahrenheit
   else if (degree === "F") {
     if (toConvertTemperature === "toCelsius") {
-      display.value = `${((parseFloat(number) - 32) * 5) / 9}°C`;
+      display.value = `${(((parseFloat(number) - 32) * 5) / 9).toFixed(2)}°C`;
     } else if (toConvertTemperature === "toKelvin") {
-      display.value = `${((parseFloat(number) - 32) * 5) / 9 + 273.15}K`;
+      display.value = `${(((parseFloat(number) - 32) * 5) / 9 + 273.15).toFixed(
+        2
+      )}K`;
     } else {
       display.style.backgroundColor = "#e84624";
       display.value = "erro: escala não encontrada";
@@ -76,9 +78,11 @@ button.addEventListener("click", (event) => {
   //caso for kelvin
   else if (degree === "K") {
     if (toConvertTemperature === "toFahrenheit") {
-      display.value = `${((parseFloat(number) - 273.15) * 9) / 5 + 32}°F`;
+      display.value = `${(((parseFloat(number) - 273.15) * 9) / 5 + 32).toFixed(
+        2
+      )}°F`;
     } else if (toConvertTemperature === "toCelsius") {
-      display.value = `${parseFloat(number) - 273.15}°C`;
+      display.value = `${(parseFloat(number) - 273.15).toFixed(2)}°C`;
     } else {
       display.style.backgroundColor = "#e84624";
       display.value = "erro: escala não encontrada";

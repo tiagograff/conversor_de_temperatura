@@ -57,9 +57,9 @@ button.addEventListener("click", function (event) {
 
   if (degree === "C") {
     if (toConvertTemperature === "toFahrenheit") {
-      display.value = "".concat(number * 1.8 + 32, "\xB0F");
+      display.value = "".concat((number * 1.8 + 32).toFixed(2), "\xB0F");
     } else if (toConvertTemperature === "toKelvin") {
-      display.value = "".concat(parseFloat(number) + 273.15, "K");
+      display.value = "".concat((parseFloat(number) + 273.15).toFixed(2), "K");
     } else {
       display.style.backgroundColor = "#e84624";
       display.value = "erro: escala não encontrada";
@@ -67,9 +67,9 @@ button.addEventListener("click", function (event) {
   } //caso for fahrenheit
   else if (degree === "F") {
       if (toConvertTemperature === "toCelsius") {
-        display.value = "".concat((parseFloat(number) - 32) * 5 / 9, "\xB0C");
+        display.value = "".concat(((parseFloat(number) - 32) * 5 / 9).toFixed(2), "\xB0C");
       } else if (toConvertTemperature === "toKelvin") {
-        display.value = "".concat((parseFloat(number) - 32) * 5 / 9 + 273.15, "K");
+        display.value = "".concat(((parseFloat(number) - 32) * 5 / 9 + 273.15).toFixed(2), "K");
       } else {
         display.style.backgroundColor = "#e84624";
         display.value = "erro: escala não encontrada";
@@ -77,9 +77,9 @@ button.addEventListener("click", function (event) {
     } //caso for kelvin
     else if (degree === "K") {
         if (toConvertTemperature === "toFahrenheit") {
-          display.value = "".concat((parseFloat(number) - 273.15) * 9 / 5 + 32, "\xB0F");
+          display.value = "".concat(((parseFloat(number) - 273.15) * 9 / 5 + 32).toFixed(2), "\xB0F");
         } else if (toConvertTemperature === "toCelsius") {
-          display.value = "".concat(parseFloat(number) - 273.15, "\xB0C");
+          display.value = "".concat((parseFloat(number) - 273.15).toFixed(2), "\xB0C");
         } else {
           display.style.backgroundColor = "#e84624";
           display.value = "erro: escala não encontrada";
